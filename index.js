@@ -7,10 +7,4 @@ client.on('ready', () => {
 	console.log(`Запустился бот ${client.user.tag}!`);
 });
 
-client.on("messageCreate", (message) => {
-	 if (message.content == "hi"){
-		 message.reply("Hello World!")
-	 }
-})
-
 client.login(process.env.TOKEN);
